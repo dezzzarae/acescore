@@ -1,0 +1,61 @@
+score = 0
+
+def newScore(answer):
+    global score
+    if answer == 'yes':
+        score = int(score + 1)
+    else:
+        score = int(score)
+
+print("""ACE SCORE TEST
+
+Please answer these questions honestly and to the best of your ability to get an accurate ACE score. 
+Answer all questions with a YES or NO answer.
+These results are not shared with anyone and are for your knowledge only.
+
+Thank you.
+
+""")
+
+print("Question 1: Have you ever been physically abused?")
+answer = input()
+newScore(answer)
+
+print("Question 2: Have you ever been emotionally abused?")
+answer = input()
+newScore(answer)
+
+print("Question 3: Have you ever been sexually abused?")
+answer = input()
+newScore(answer)
+
+print("Question 4: Have you ever been physically neglected?")
+answer = input()
+newScore(answer)
+
+print("Question 5: Have you ever been emotionally neglected?")
+answer = input()
+newScore(answer)
+
+print("Question 6: Has one or more of your caregivers experienced a mental illness?")
+answer = input()
+newScore(answer)
+
+print("Question 7: Have you ever witnessed domestic violence?")
+answer = input()
+newScore(answer)
+
+print("Question 8: Were your parents or caregivers divorced or separated?")
+answer = input()
+newScore(answer)
+
+print("Question 9: Were any of your relatives incarcerated?")
+answer = input()
+newScore(answer)
+
+print("Question 10: Has one or more of your family members suffered from substance abuse disorder?")
+answer = input()
+newScore(answer)
+
+print("Thank you for completing this survey.")
+print("Your ACE score is " + str(score) + " out of 10.")
